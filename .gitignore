@@ -1,23 +1,38 @@
-HELP.md
+# =========================
+# 🔐 Variables sensibles
+# =========================
+.env
+.env.*
+
+# =========================
+# 🐍 Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.ipynb_checkpoints/
+
+# =========================
+# 📊 Datos (evitar subir peso)
+# =========================
+data/raw/*
+data/processed/*
+
+# =========================
+# ⚙️ Gradle / Java
+# =========================
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
+# =========================
+# 🧰 IntelliJ IDEA
+# =========================
 .idea
 *.iws
 *.iml
@@ -26,12 +41,17 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# =========================
+# 🧪 Otros IDEs
+# =========================
 .vscode/
+.classpath
+.project
+.settings
+bin/
+
+# =========================
+# 💻 Sistema
+# =========================
+.DS_Store
+Thumbs.db
